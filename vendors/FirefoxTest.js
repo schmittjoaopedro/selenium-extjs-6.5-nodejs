@@ -1,7 +1,7 @@
-require('chromedriver');
+require('geckodriver');
 let webdriver = require('selenium-webdriver');
 
-class ChromeTest {
+class FirefoxTest {
 
   constructor(nextExecutor) {
     this.driver = null;
@@ -26,11 +26,11 @@ class ChromeTest {
       next = () => this.runTest(this.tests[index], ++index);
     }
     test.run(
-      () => new webdriver.Builder().withCapabilities(webdriver.Capabilities.chrome()).build(),
+      () => new webdriver.Builder().withCapabilities(webdriver.Capabilities.firefox()).build(),
       next
     )
   }
 
 }
 
-module.exports = ChromeTest;
+module.exports = FirefoxTest;
