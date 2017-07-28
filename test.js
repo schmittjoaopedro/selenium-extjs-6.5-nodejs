@@ -1,5 +1,5 @@
 let FirefoxTest = require('./vendors/FirefoxTest');
-let ChromeTest = require('./vendors/ChromeTest');   
+let ChromeTest = require('./vendors/ChromeTest');
 
 let FormRegisterTest = require('./tests/FormRegisterTest');
 let EditorGridTest = require('./tests/EditorGridTest');
